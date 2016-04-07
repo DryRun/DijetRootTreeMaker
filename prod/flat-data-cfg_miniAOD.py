@@ -456,8 +456,9 @@ process.source = cms.Source("PoolSource",
     #fileNames = cms.untracked.vstring('root://xrootd.unl.edu//store/data/Run2015B/JetHT/MINIAOD/PromptReco-v1/000/251/883/00000/62DCDC81-2B2D-E511-AEAD-02163E0126A0.root')
     #fileNames = cms.untracked.vstring('root://xrootd.unl.edu//store/data/Run2015B/SingleMuon/MINIAOD/PromptReco-v1/000/251/883/00000/E2546D9E-492D-E511-9977-02163E011D46.root')
     #fileNames = cms.untracked.vstring('root://xrootd.unl.edu//store/data/Run2015B/SingleMuon/MINIAOD/PromptReco-v1/000/251/883/00000/62919ECB-1F2D-E511-B387-02163E013796.root')
-    fileNames = cms.untracked.vstring('root://xrootd.unl.edu//store/data/Run2015D/JetHT/MINIAOD/PromptReco-v4/000/258/174/00000/6E079318-CC6C-E511-B435-02163E01410C.root')
+    #fileNames = cms.untracked.vstring('root://xrootd.unl.edu//store/data/Run2015D/JetHT/MINIAOD/PromptReco-v4/000/258/174/00000/6E079318-CC6C-E511-B435-02163E01410C.root')
     #fileNames = cms.untracked.vstring('/store/data/Run2015A/Jet/AOD/PromptReco-v1/000/247/081/00000/804F6C9F-DB0C-E511-B0B6-02163E0143D9.root')
+    fileNames = cms.untracked.vstring('/store/data/Run2012C/JetHT/AOD/PromptReco-v2/000/198/934/B479184A-AECE-E111-BFDD-5404A63886B9.root')
 )
 
 # #Keep statements for valueMaps (link Reco::Jets to associated quantities)
