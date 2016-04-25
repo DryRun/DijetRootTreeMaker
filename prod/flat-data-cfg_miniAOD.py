@@ -64,8 +64,8 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condD
 #process.GlobalTag.globaltag = 'MCRUN2_74_V9A::All'
 #process.GlobalTag.globaltag = 'GR_P_V56::All'# works with FrontierConditions_GlobalTag_cff
 #process.GlobalTag.globaltag = '74X_dataRun2_Prompt_v0' #works with FrontierConditions_GlobalTag_condDBv2_cff - up to /JetHT/Run2015D-PromptReco-v3/MINIAOD in 7_4_3 (works also for RunDv4 and gives same results)
-#process.GlobalTag.globaltag = '74X_dataRun2_Prompt_v4' #works with FrontierConditions_GlobalTag_condDBv2_cff - from /JetHT/Run2015D-PromptReco-v4/MINIAOD in 7_4_14 
-process.GlobalTag.globaltag = THISGLOBALTAG
+process.GlobalTag.globaltag = '74X_dataRun2_Prompt_v4' #works with FrontierConditions_GlobalTag_condDBv2_cff - from /JetHT/Run2015D-PromptReco-v4/MINIAOD in 7_4_14 
+#process.GlobalTag.globaltag = 'FT_R_53_V18::All'
 
 
 #--------------------- Report and output ---------------------------
@@ -81,7 +81,7 @@ process.TFileService=cms.Service("TFileService",
                                  #fileName=cms.string('dijetTree_signal_M8000.root'),
                                  #fileName=cms.string('dijetTree_QstarToJJ_M_3000_PHYS14.root'),
                                  #fileName=cms.string('dijetTree_dataTest.root'),
-                                 fileName=cms.string(THISROOTFILE),
+                                 fileName=cms.string("dijetTree_dataTest.root"),
                                  closeFileFast = cms.untracked.bool(True)
                                  )
 
@@ -459,6 +459,7 @@ process.source = cms.Source("PoolSource",
     #fileNames = cms.untracked.vstring('root://xrootd.unl.edu//store/data/Run2015D/JetHT/MINIAOD/PromptReco-v4/000/258/174/00000/6E079318-CC6C-E511-B435-02163E01410C.root')
     #fileNames = cms.untracked.vstring('/store/data/Run2015A/Jet/AOD/PromptReco-v1/000/247/081/00000/804F6C9F-DB0C-E511-B0B6-02163E0143D9.root')
     fileNames = cms.untracked.vstring('/store/data/Run2012C/JetHT/AOD/PromptReco-v2/000/198/934/B479184A-AECE-E111-BFDD-5404A63886B9.root')
+    #fileNames = cms.untracked.vstring('/store/data/Run2012C/JetHT/AOD/22Jan2013-v1/20000/00021EB1-1C6A-E211-99E9-002590596498.root')
 )
 
 # #Keep statements for valueMaps (link Reco::Jets to associated quantities)
